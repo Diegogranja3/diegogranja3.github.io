@@ -1,1 +1,28 @@
+penaindustrialequipment.com es la pagina mas reciente en la que estoy trabajando actualmente, es una tienda en linea para una empresa estadounidense.
 
+Caracteristicas del comprador:
+*El usuario debe crearse una cuenta para poder adquirir productos
+*Cada usuario cuenta con su carrito de compras
+*El usuario paga el envio de los productos que le es mostrado en la seccion del carrito de compras
+*El precio del envio esta determinado por la API de UPS mediante las dimensiones de cada paquete
+
+Caracteristicas del administrador:
+*Puede ingresar las medidas de cada articulo en sistema metriculo ingles o internacional
+*Puede crear ofertas de tiempo limitado
+*Puede deshabilitar que un usuario haga compras
+*Tiene acceso completo a la informacion de los usuarios (excluyendo informacion sensible como tarjetas de credito/debito)
+
+Lenguajes utilizados:
+*HTML (estructura)
+*CSS (estilos usando tailwind)
+*PHP (intermediario entre la base de datos y la tienda)
+*SQL (base de datos)
+*Javascript (utilizado para validaciones)
+*Vue.js (utilizado para la vista de productos en tiempo real)
+
+Herramientas utilizadas:
+*API de UPS (utilizada para tener los costos del envio y crear los mismos)
+*API de Square (utilizado para hacer cobros mediante tarjeta)
+*API propia de la tienda desarrollada en PHP (utilizada para validaciones de compra)
+
+**ESTE PROYECTO SIGUE EN DESARROLLO**
