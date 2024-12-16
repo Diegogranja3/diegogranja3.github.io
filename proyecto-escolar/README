@@ -1,0 +1,24 @@
+Este proyecto fue desarrollado en los meses de Agosto a Diciembre del 2022, la finalidad del proyecto era ayudar al departamento de desarrollo sustentable de mi preparatoria, el proyecto fue terminado e instalado de forma exitosa.
+
+INDICACIONES DE USO:
+*Solo el administrador puede acceder a la informacion del personal
+*Solo el administrador puede agregar personal
+*El personal esta limitado a unicamente ver, ingresar y generar reportes de los materiales
+
+FUNCIONES DEL PROGRAMA:
+*Captura de los materiales reciclados en una base de datos
+*Generar graficos a partir de la informacion que este en la base de datos
+*Generar PDFs con concentrados de los materiales reciclados en todo un semestre
+*Agregar personal que puede acceder a la informacion
+
+LENGAUJES UTILIZADOS:
+*HTML (estructura de las paginas)
+*CSS (diseño de las paginas usando boostrap)
+*PHP (intermediario entre la pagina y base de datos)
+*JAVASCRIPT (utilizado para generar graficos)
+*SQL (base de datos)
+
+CREADORES:
+Diego Granja Peña
+Daniel Martinez Rodriguez 
+Kevin Nauj Martinez Baldazo
