@@ -1,1 +1,10 @@
+corporativosando.com fue mi segundo proyecto como independiente, de igual forma es una pagina informativa, en esta pagina se utiliza una base de datos, ya que en la parte de "contactanos" hay un formulario, la respuesta de ese formulario 
+llega a la base de datos de la pagina.
 
+
+Lenguajes utilizados:
+*HTML (estructura)
+*CSS (apariencia usando tailwind)
+*PHP (intermediario entre la base de datos y la pagina)
+*SQL (base de datos)
+*Javascript (utilizado para el carrusel)
