@@ -1,1 +1,429 @@
-<p>hola<p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body class="bg-black text-white">
+<div class="fixed flex flex-col items-center justify-center md:hidden h-full w-screen bg-blue-900 z-[100]">
+  <p class="text-2xl text-white text-center">Gira el dispositivo de forma horizontal</p>
+  <svg class="size-36" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M21.323 8.616l-4.94-4.94a1.251 1.251 0 0 0-1.767 0l-10.94 10.94a1.251 1.251 0 0 0 0 1.768l4.94 4.94a1.25 1.25 0 0 0 1.768 0l10.94-10.94a1.251 1.251 0 0 0 0-1.768zM14 5.707L19.293 11 11.5 18.793 6.207 13.5zm-4.323 14.91a.25.25 0 0 1-.354 0l-1.47-1.47.5-.5-2-2-.5.5-1.47-1.47a.25.25 0 0 1 0-.354L5.5 14.207l5.293 5.293zm10.94-10.94l-.617.616L14.707 5l.616-.616a.25.25 0 0 1 .354 0l4.94 4.94a.25.25 0 0 1 0 .353zm1.394 6.265V18a3.003 3.003 0 0 1-3 3h-3.292l1.635 1.634-.707.707-2.848-2.847 2.848-2.848.707.707L15.707 20h3.304a2.002 2.002 0 0 0 2-2v-2.058zM4 9H3V7a3.003 3.003 0 0 1 3-3h3.293L7.646 2.354l.707-.707 2.848 2.847L8.354 7.34l-.707-.707L9.28 5H6a2.002 2.002 0 0 0-2 2z"></path><path fill="none" d="M0 0h24v24H0z"></path></g></svg>
+</div>
+
+    <nav class="hidden md:flex justify-between py-12">
+        <p class="text-3xl mx-12">Diego Granja Peña</p>
+        <p class="m-4 text-2xl mx-12">Desarrollador FullStack Jr.</p>
+    </nav>
+    <div class="md:grid md:grid-cols-5">
+        <div class="hidden md:block">
+            <div class="h-full flex items-end">
+                <p>Contacto</p>
+            </div>
+        </div>
+        <div class="hidden md:block fixed">
+            <p class="text-xl mx-5">Linea de tiempo:</p>
+            <div class="flex text-center items-center md:flex-col gap-4 mx-10 mt-5">
+                <p class="transition-all duration-300 ease-in-out text-xl hover:text-4xl">2025</p>
+                <p class="transition-all duration-300 ease-in-out text-xl hover:text-4xl">2024</p>
+                <p class="transition-all duration-300 ease-in-out text-xl hover:text-4xl">2023</p>
+                <p class="transition-all duration-300 ease-in-out text-xl hover:text-4xl">2022</p>
+            </div>
+        </div>
+        <div class="hidden md:block mx-6 col-span-4">
+            <div class="mb-12">
+                <p class="text-3xl mb-5 mx-4">Sobre mi:</p>
+                <p class="text-justify md:mx-10">
+                Cuento con más de 3 años de experiencia participando activamente en proyectos tecnológicos para pequeñas y medianas empresas, desarrollando soluciones prácticas que optimizan procesos, mejoran la experiencia del usuario y resuelven problemas reales. Mi formación académica incluye una licenciatura en Ciencias Computacionales, complementada con una especialización técnica en programación web, lo que me permite abordar tanto el backend como el frontend de los sistemas. Actualmente, estoy motivado y en constante preparación para avanzar profesionalmente como analista de datos, un rol que me apasiona por su capacidad de transformar información en decisiones estratégicas. Mi enfoque se basa en la mejora continua, el aprendizaje autodidacta y el compromiso con la calidad del código.
+                </p>
+            </div>
+            <div>
+                <p class="text-3xl mx-4">Proyecto para Printable3D Monterrey - 2025</p>
+                <div class="mx-12 mt-5">
+                    <div class="md:grid md:grid-cols-5">
+                        <div class="col-span-4 m-4">
+                            <img class="" src="/images/printable.png" alt="">
+                            <p class="text-justify md:mx-4 text-lg">
+                            El propósito de este proyecto es desarrollar una plataforma web integral que permita a los usuarios subir archivos 3D relacionados con sus pedidos. Un administrador tendrá la capacidad de revisar, autorizar o cancelar dichos pedidos, gestionando el flujo de trabajo de manera eficiente. Además, la plataforma incluye funcionalidades complementarias como el agendamiento de citas, envío de formularios personalizados y otras herramientas orientadas a mejorar la interacción con el cliente y la gestión operativa. El enfoque está en ofrecer una solución práctica, intuitiva y escalable para negocios relacionados con impresión 3D o servicios técnicos personalizados.
+                            </p>
+                            <p class="text-2xl text-blue-500 text-center py-8">Este proyecto sigue en desarrollo</p>
+                        </div>
+                        <div class="flex flex-wrap md:flex-col items-center justify-center ml-8">
+                            <div class="flex md:flex-col mx-8 gap-8">
+                                <div class="flex gap-4">
+                                    <p class="text-xl">Vue.js</p>
+                                    <svg class="size-12" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M2 4L16 28L30 4H24.5L16 18.5L7.5 4H2Z" fill="#41B883"></path> <path d="M7.5 4L16 18.5L24.5 4H19.5L16.0653 10.0126L12.5 4H7.5Z" fill="#35495E"></path> </g></svg>
+                                </div>
+                                <div class="flex gap-4">
+                                    <p class="text-xl">Tailwind</p>
+                                    <svg class="size-12" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><title>file_type_tailwind</title><path d="M9,13.7q1.4-5.6,7-5.6c5.6,0,6.3,4.2,9.1,4.9q2.8.7,4.9-2.1-1.4,5.6-7,5.6c-5.6,0-6.3-4.2-9.1-4.9Q11.1,10.9,9,13.7ZM2,22.1q1.4-5.6,7-5.6c5.6,0,6.3,4.2,9.1,4.9q2.8.7,4.9-2.1-1.4,5.6-7,5.6c-5.6,0-6.3-4.2-9.1-4.9Q4.1,19.3,2,22.1Z" style="fill:#44a8b3"></path></g></svg>
+                                </div>
+                                <div class="flex gap-4">
+                                    <p class="text-xl">CSS</p>
+                                    <svg class="size-12" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 28L4 3H28L26 28L16 31L6 28Z" fill="#1172B8"></path> <path d="M26 5H16V29.5L24 27L26 5Z" fill="#33AADD"></path> <path d="M19.5 17.5H9.5L9 14L17 11.5H9L8.5 8.5H24L23.5 12L17 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5Z" fill="white"></path> </g></svg>
+                                </div>
+                                <div class="flex gap-4">
+                                    <p class="text-xl">HTML</p>
+                                    <svg class="size-12" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 28L4 3H28L26 28L16 31L6 28Z" fill="#E44D26"></path> <path d="M26 5H16V29.5L24 27L26 5Z" fill="#F16529"></path> <path d="M9.5 17.5L8.5 8H24L23.5 11H11.5L12 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5H9.5Z" fill="white"></path> </g></svg>
+                                </div>
+                                
+                            </div>
+                            <div class="flex md:flex-col mx-8 gap-8 mt-8">
+                                <div class="flex gap-4">
+                                    <p class="text-xl">Python</p>
+                                    <svg class="size-12" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><defs><linearGradient id="a" x1="-133.268" y1="-202.91" x2="-133.198" y2="-202.84" gradientTransform="translate(25243.061 38519.17) scale(189.38 189.81)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#387eb8"></stop><stop offset="1" stop-color="#366994"></stop></linearGradient><linearGradient id="b" x1="-133.575" y1="-203.203" x2="-133.495" y2="-203.133" gradientTransform="translate(25309.061 38583.42) scale(189.38 189.81)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffe052"></stop><stop offset="1" stop-color="#ffc331"></stop></linearGradient></defs><title>file_type_python</title><path d="M15.885,2.1c-7.1,0-6.651,3.07-6.651,3.07V8.36h6.752v1H6.545S2,8.8,2,16.005s4.013,6.912,4.013,6.912H8.33V19.556s-.13-4.013,3.9-4.013h6.762s3.772.06,3.772-3.652V5.8s.572-3.712-6.842-3.712h0ZM12.153,4.237a1.214,1.214,0,1,1-1.183,1.244v-.02a1.214,1.214,0,0,1,1.214-1.214h0Z" style="fill:url(#a)"></path><path d="M16.085,29.91c7.1,0,6.651-3.08,6.651-3.08V23.65H15.985v-1h9.47S30,23.158,30,15.995s-4.013-6.912-4.013-6.912H23.64V12.4s.13,4.013-3.9,4.013H12.975S9.2,16.356,9.2,20.068V26.2s-.572,3.712,6.842,3.712h.04Zm3.732-2.147A1.214,1.214,0,1,1,21,26.519v.03a1.214,1.214,0,0,1-1.214,1.214h.03Z" style="fill:url(#b)"></path></g></svg>
+                                </div>
+                                <div class="flex gap-4">
+                                    <p class="text-xl">FastSAPI</p>
+                                    <svg class="size-12" fill="#3ea349" viewBox="-1.92 -1.92 27.84 27.84" role="img" xmlns="http://www.w3.org/2000/svg" stroke="#3ea349"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M12 0C5.375 0 0 5.375 0 12c0 6.627 5.375 12 12 12 6.626 0 12-5.373 12-12 0-6.625-5.373-12-12-12zm-.624 21.62v-7.528H7.19L13.203 2.38v7.528h4.029L11.376 21.62z"></path></g></svg>
+                                </div>
+                            </div>
+                                <div class="flex flex-col mx-8 gap-8 mt-8">
+                                    <div class="flex gap-4">
+                                        <p class="text-xl">MySQL</p>
+                                        <svg class="size-12" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><title>file_type_sql</title><path d="M8.562,15.256A21.159,21.159,0,0,0,16,16.449a21.159,21.159,0,0,0,7.438-1.194c1.864-.727,2.525-1.535,2.525-2V9.7a10.357,10.357,0,0,1-2.084,1.076A22.293,22.293,0,0,1,16,12.078a22.36,22.36,0,0,1-7.879-1.3A10.28,10.28,0,0,1,6.037,9.7v3.55C6.037,13.724,6.7,14.528,8.562,15.256Z" style="fill:#ffda44"></path><path d="M8.562,21.961a15.611,15.611,0,0,0,2.6.741A24.9,24.9,0,0,0,16,23.155a24.9,24.9,0,0,0,4.838-.452,15.614,15.614,0,0,0,2.6-.741c1.864-.727,2.525-1.535,2.525-2v-3.39a10.706,10.706,0,0,1-1.692.825A23.49,23.49,0,0,1,16,18.74a23.49,23.49,0,0,1-8.271-1.348,10.829,10.829,0,0,1-1.692-.825V19.96C6.037,20.426,6.7,21.231,8.562,21.961Z" style="fill:#ffda44"></path><path d="M16,30c5.5,0,9.963-1.744,9.963-3.894V23.269a10.5,10.5,0,0,1-1.535.762l-.157.063A23.487,23.487,0,0,1,16,25.445a23.422,23.422,0,0,1-8.271-1.351c-.054-.02-.106-.043-.157-.063a10.5,10.5,0,0,1-1.535-.762v2.837C6.037,28.256,10.5,30,16,30Z" style="fill:#ffda44"></path><ellipse cx="16" cy="5.894" rx="9.963" ry="3.894" style="fill:#ffda44"></ellipse></g></svg>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <p class="text-3xl mx-4 mt-12">Datathon Tecnologico de Monterrey - 2025</p>
+                <div class="mx-12 mt-5 md:grid md:grid-cols-5">
+                    <div class="col-span-4  m-4">
+                        <img src="/images/datathon.jpg" alt="">
+                        <p class="text-justify mx-4 text-lg">
+                        En este evento organizado por el Tecnológico de Monterrey, participaron diversas empresas, cada una presentando un reto diferente. Mi equipo y yo decidimos enfocarnos en el desafío de predecir si una tienda OXXO tendría éxito o no, utilizando como base diversos factores clave representados en la imagen. Para ello, desarrollamos un modelo de análisis de datos apoyándonos principalmente en herramientas como Microsoft Excel y técnicas básicas de modelado predictivo.
+                        </p>
+                    </div>
+                        <div class="flex flex-wrap md:flex-col items-center justify-center ml-8">
+                            <div class="flex md:flex-col mx-8 gap-8">
+                                <div class="flex gap-4">
+                                    <p class="text-xl">Vue.js</p>
+                                    <svg class="size-12" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M2 4L16 28L30 4H24.5L16 18.5L7.5 4H2Z" fill="#41B883"></path> <path d="M7.5 4L16 18.5L24.5 4H19.5L16.0653 10.0126L12.5 4H7.5Z" fill="#35495E"></path> </g></svg>
+                                </div>
+                                <div class="flex gap-4">
+                                    <p class="text-xl">Tailwind</p>
+                                    <svg class="size-12" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><title>file_type_tailwind</title><path d="M9,13.7q1.4-5.6,7-5.6c5.6,0,6.3,4.2,9.1,4.9q2.8.7,4.9-2.1-1.4,5.6-7,5.6c-5.6,0-6.3-4.2-9.1-4.9Q11.1,10.9,9,13.7ZM2,22.1q1.4-5.6,7-5.6c5.6,0,6.3,4.2,9.1,4.9q2.8.7,4.9-2.1-1.4,5.6-7,5.6c-5.6,0-6.3-4.2-9.1-4.9Q4.1,19.3,2,22.1Z" style="fill:#44a8b3"></path></g></svg>
+                                </div>
+                                <div class="flex gap-4">
+                                    <p class="text-xl">CSS</p>
+                                    <svg class="size-12" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 28L4 3H28L26 28L16 31L6 28Z" fill="#1172B8"></path> <path d="M26 5H16V29.5L24 27L26 5Z" fill="#33AADD"></path> <path d="M19.5 17.5H9.5L9 14L17 11.5H9L8.5 8.5H24L23.5 12L17 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5Z" fill="white"></path> </g></svg>
+                                </div>
+                                <div class="flex gap-4">
+                                    <p class="text-xl">HTML</p>
+                                    <svg class="size-12" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 28L4 3H28L26 28L16 31L6 28Z" fill="#E44D26"></path> <path d="M26 5H16V29.5L24 27L26 5Z" fill="#F16529"></path> <path d="M9.5 17.5L8.5 8H24L23.5 11H11.5L12 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5H9.5Z" fill="white"></path> </g></svg>
+                                </div>
+                                
+                            </div>
+                            <div class="flex md:flex-col mx-8 gap-8 mt-8">
+                                <div class="flex gap-4">
+                                    <p class="text-xl">Python</p>
+                                    <svg class="size-12" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><defs><linearGradient id="a" x1="-133.268" y1="-202.91" x2="-133.198" y2="-202.84" gradientTransform="translate(25243.061 38519.17) scale(189.38 189.81)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#387eb8"></stop><stop offset="1" stop-color="#366994"></stop></linearGradient><linearGradient id="b" x1="-133.575" y1="-203.203" x2="-133.495" y2="-203.133" gradientTransform="translate(25309.061 38583.42) scale(189.38 189.81)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#ffe052"></stop><stop offset="1" stop-color="#ffc331"></stop></linearGradient></defs><title>file_type_python</title><path d="M15.885,2.1c-7.1,0-6.651,3.07-6.651,3.07V8.36h6.752v1H6.545S2,8.8,2,16.005s4.013,6.912,4.013,6.912H8.33V19.556s-.13-4.013,3.9-4.013h6.762s3.772.06,3.772-3.652V5.8s.572-3.712-6.842-3.712h0ZM12.153,4.237a1.214,1.214,0,1,1-1.183,1.244v-.02a1.214,1.214,0,0,1,1.214-1.214h0Z" style="fill:url(#a)"></path><path d="M16.085,29.91c7.1,0,6.651-3.08,6.651-3.08V23.65H15.985v-1h9.47S30,23.158,30,15.995s-4.013-6.912-4.013-6.912H23.64V12.4s.13,4.013-3.9,4.013H12.975S9.2,16.356,9.2,20.068V26.2s-.572,3.712,6.842,3.712h.04Zm3.732-2.147A1.214,1.214,0,1,1,21,26.519v.03a1.214,1.214,0,0,1-1.214,1.214h.03Z" style="fill:url(#b)"></path></g></svg>
+                                </div>
+                                <div class="flex gap-4">
+                                    <p class="text-xl">FastSAPI</p>
+                                    <svg class="size-12" fill="#3ea349" viewBox="-1.92 -1.92 27.84 27.84" role="img" xmlns="http://www.w3.org/2000/svg" stroke="#3ea349"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M12 0C5.375 0 0 5.375 0 12c0 6.627 5.375 12 12 12 6.626 0 12-5.373 12-12 0-6.625-5.373-12-12-12zm-.624 21.62v-7.528H7.19L13.203 2.38v7.528h4.029L11.376 21.62z"></path></g></svg>
+                                </div>
+                            </div>
+                                <div class="flex flex-col mx-8 gap-8 mt-8">
+                                    <div class="flex gap-4">
+                                        <p class="text-xl ml-5">TensorFlow</p>
+                                        <svg class="size-12" viewBox="-9 0 274 274" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <g> <path d="M145.726081,42.0651946 L145.726081,84.1347419 L218.586952,126.204312 L218.586952,84.1347419 L145.726081,42.0651946 Z M-1.98726454e-07,84.1347419 L-1.98726454e-07,126.204312 L36.4304238,147.234755 L36.4304238,105.169527 L-1.98726454e-07,84.1347419 Z M109.291294,105.169527 L72.8608701,126.204312 L72.8608701,252.404316 L109.291294,273.439101 L109.291294,189.304303 L145.726081,210.339088 L145.726081,168.26954 L109.291294,147.234755 L109.291294,105.169527 Z" fill="#E55B2D"> </path> <path d="M145.726081,42.0651946 L36.4304238,105.169527 L36.4304238,147.234755 L109.291294,105.169527 L109.291294,147.234755 L145.726081,126.204312 L145.726081,42.0651946 Z M255.021717,63.0999794 L218.586952,84.1347419 L218.586952,126.204312 L255.021717,105.169527 L255.021717,63.0999794 Z M182.156505,147.234755 L145.726081,168.26954 L145.726081,210.339088 L182.156505,189.304303 L182.156505,147.234755 Z M145.726081,210.339088 L109.291294,189.304303 L109.291294,273.439101 L145.726081,252.404316 L145.726081,210.339088 Z" fill="#ED8E24"> </path> <path d="M145.726081,-3.41864288e-05 L-1.98726454e-07,84.1347419 L36.4304238,105.169527 L145.726081,42.0651946 L218.586952,84.1347419 L255.021717,63.0999794 L145.726081,-3.41864288e-05 Z M145.726081,126.204312 L109.291294,147.234755 L145.726081,168.26954 L182.156505,147.234755 L145.726081,126.204312 Z" fill="#F8BF3C"> </path> </g> </g></svg>
+                                    </div>
+                                </div>
+                                <div class="flex flex-col mx-8 gap-8 mt-8">
+                                    <div class="flex gap-4">
+                                        <p class="text-xl ml-5">Excel</p>
+                                        <svg class="size-12" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><defs><linearGradient id="a" x1="4.494" y1="-2092.086" x2="13.832" y2="-2075.914" gradientTransform="translate(0 2100)" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#18884f"></stop><stop offset="0.5" stop-color="#117e43"></stop><stop offset="1" stop-color="#0b6631"></stop></linearGradient></defs><title>file_type_excel</title><path d="M19.581,15.35,8.512,13.4V27.809A1.192,1.192,0,0,0,9.705,29h19.1A1.192,1.192,0,0,0,30,27.809h0V22.5Z" style="fill:#185c37"></path><path d="M19.581,3H9.705A1.192,1.192,0,0,0,8.512,4.191h0V9.5L19.581,16l5.861,1.95L30,16V9.5Z" style="fill:#21a366"></path><path d="M8.512,9.5H19.581V16H8.512Z" style="fill:#107c41"></path><path d="M16.434,8.2H8.512V24.45h7.922a1.2,1.2,0,0,0,1.194-1.191V9.391A1.2,1.2,0,0,0,16.434,8.2Z" style="opacity:0.10000000149011612;isolation:isolate"></path><path d="M15.783,8.85H8.512V25.1h7.271a1.2,1.2,0,0,0,1.194-1.191V10.041A1.2,1.2,0,0,0,15.783,8.85Z" style="opacity:0.20000000298023224;isolation:isolate"></path><path d="M15.783,8.85H8.512V23.8h7.271a1.2,1.2,0,0,0,1.194-1.191V10.041A1.2,1.2,0,0,0,15.783,8.85Z" style="opacity:0.20000000298023224;isolation:isolate"></path><path d="M15.132,8.85H8.512V23.8h6.62a1.2,1.2,0,0,0,1.194-1.191V10.041A1.2,1.2,0,0,0,15.132,8.85Z" style="opacity:0.20000000298023224;isolation:isolate"></path><path d="M3.194,8.85H15.132a1.193,1.193,0,0,1,1.194,1.191V21.959a1.193,1.193,0,0,1-1.194,1.191H3.194A1.192,1.192,0,0,1,2,21.959V10.041A1.192,1.192,0,0,1,3.194,8.85Z" style="fill:url(#a)"></path><path d="M5.7,19.873l2.511-3.884-2.3-3.862H7.758L9.013,14.6c.116.234.2.408.238.524h.017c.082-.188.169-.369.26-.546l1.342-2.447h1.7l-2.359,3.84,2.419,3.905H10.821l-1.45-2.711A2.355,2.355,0,0,1,9.2,16.8H9.176a1.688,1.688,0,0,1-.168.351L7.515,19.873Z" style="fill:#fff"></path><path d="M28.806,3H19.581V9.5H30V4.191A1.192,1.192,0,0,0,28.806,3Z" style="fill:#33c481"></path><path d="M19.581,16H30v6.5H19.581Z" style="fill:#107c41"></path></g></svg>
+                                    </div>
+                                </div>
+                        </div>
+                </div>
+                
+            </div>
+            <div>
+                <p class="text-3xl mx-4 mt-12">Proyecto para TheSOLPit - 2024</p>
+                <div class="mx-12 mt-5 md:grid md:grid-cols-5">
+                    <div class="col-span-4  m-4">
+                        <img src="/images/solpit.jpg" alt="">
+                        <p class="text-justify mx-4 text-lg">
+                        <strong>TheSOLPIT</strong> fue un proyecto concebido como una plataforma basada en blockchain, diseñada para albergar múltiples minijuegos donde los usuarios pudieran canjear diversos premios. Aunque el desarrollo avanzó significativamente, el proyecto fue cancelado por decisión del cliente.
+                        </p>
+                    </div>
+                        <div class="flex flex-wrap md:flex-col items-center justify-center ml-8">
+                            <div class="flex md:flex-col mx-8 gap-8">
+                                <div class="flex gap-4">
+                                    <p class="text-xl">Vue.js</p>
+                                    <svg class="size-12" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M2 4L16 28L30 4H24.5L16 18.5L7.5 4H2Z" fill="#41B883"></path> <path d="M7.5 4L16 18.5L24.5 4H19.5L16.0653 10.0126L12.5 4H7.5Z" fill="#35495E"></path> </g></svg>
+                                </div>
+                                <div class="flex gap-4">
+                                    <p class="text-xl">Tailwind</p>
+                                    <svg class="size-12" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><title>file_type_tailwind</title><path d="M9,13.7q1.4-5.6,7-5.6c5.6,0,6.3,4.2,9.1,4.9q2.8.7,4.9-2.1-1.4,5.6-7,5.6c-5.6,0-6.3-4.2-9.1-4.9Q11.1,10.9,9,13.7ZM2,22.1q1.4-5.6,7-5.6c5.6,0,6.3,4.2,9.1,4.9q2.8.7,4.9-2.1-1.4,5.6-7,5.6c-5.6,0-6.3-4.2-9.1-4.9Q4.1,19.3,2,22.1Z" style="fill:#44a8b3"></path></g></svg>
+                                </div>
+                                <div class="flex gap-4">
+                                    <p class="text-xl">CSS</p>
+                                    <svg class="size-12" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 28L4 3H28L26 28L16 31L6 28Z" fill="#1172B8"></path> <path d="M26 5H16V29.5L24 27L26 5Z" fill="#33AADD"></path> <path d="M19.5 17.5H9.5L9 14L17 11.5H9L8.5 8.5H24L23.5 12L17 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5Z" fill="white"></path> </g></svg>
+                                </div>
+                                <div class="flex gap-4">
+                                    <p class="text-xl">HTML</p>
+                                    <svg class="size-12" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 28L4 3H28L26 28L16 31L6 28Z" fill="#E44D26"></path> <path d="M26 5H16V29.5L24 27L26 5Z" fill="#F16529"></path> <path d="M9.5 17.5L8.5 8H24L23.5 11H11.5L12 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5H9.5Z" fill="white"></path> </g></svg>
+                                </div>
+                                
+                            </div>
+                        </div>
+                </div>
+                
+            </div>
+                        <div>
+                <p class="text-3xl mx-4 mt-12">Proyecto para Peña Industrial Equipment - 2024</p>
+                <div class="mx-12 mt-5 md:grid md:grid-cols-5">
+                    <div class="col-span-4  m-4">
+                        <img src="/images/pena.png" alt="">
+                        <p class="text-justify mx-4 text-lg">
+                        Tienda estadounidense en línea especializada en equipamiento para reparaciones. Incluye funcionalidades como carrito de compras, sistema de pagos integrado directamente en la plataforma, entre muchas otras características diseñadas para mejorar la experiencia del usuario.
+                        </p>
+                    </div>
+                        <div class="flex flex-wrap md:flex-col items-center justify-center ml-8">
+                            <div class="flex md:flex-col mx-8 gap-8">
+                                <div class="flex gap-4">
+                                    <p class="text-xl">Vue.js</p>
+                                    <svg class="size-12" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M2 4L16 28L30 4H24.5L16 18.5L7.5 4H2Z" fill="#41B883"></path> <path d="M7.5 4L16 18.5L24.5 4H19.5L16.0653 10.0126L12.5 4H7.5Z" fill="#35495E"></path> </g></svg>
+                                </div>
+                                <div class="flex gap-4">
+                                    <p class="text-xl">Tailwind</p>
+                                    <svg class="size-12" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><title>file_type_tailwind</title><path d="M9,13.7q1.4-5.6,7-5.6c5.6,0,6.3,4.2,9.1,4.9q2.8.7,4.9-2.1-1.4,5.6-7,5.6c-5.6,0-6.3-4.2-9.1-4.9Q11.1,10.9,9,13.7ZM2,22.1q1.4-5.6,7-5.6c5.6,0,6.3,4.2,9.1,4.9q2.8.7,4.9-2.1-1.4,5.6-7,5.6c-5.6,0-6.3-4.2-9.1-4.9Q4.1,19.3,2,22.1Z" style="fill:#44a8b3"></path></g></svg>
+                                </div>
+                                <div class="flex gap-4">
+                                    <p class="text-xl">CSS</p>
+                                    <svg class="size-12" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 28L4 3H28L26 28L16 31L6 28Z" fill="#1172B8"></path> <path d="M26 5H16V29.5L24 27L26 5Z" fill="#33AADD"></path> <path d="M19.5 17.5H9.5L9 14L17 11.5H9L8.5 8.5H24L23.5 12L17 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5Z" fill="white"></path> </g></svg>
+                                </div>
+                                <div class="flex gap-4">
+                                    <p class="text-xl">HTML</p>
+                                    <svg class="size-12" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 28L4 3H28L26 28L16 31L6 28Z" fill="#E44D26"></path> <path d="M26 5H16V29.5L24 27L26 5Z" fill="#F16529"></path> <path d="M9.5 17.5L8.5 8H24L23.5 11H11.5L12 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5H9.5Z" fill="white"></path> </g></svg>
+                                </div>
+                                
+                            </div>
+                            <div class="flex flex-col mx-8 gap-8 mt-8">
+                                <div class="flex gap-4">
+                                    <p class="text-xl">PHP</p>
+                                    <svg class="size-12" fill="#7b1db9" viewBox="-1.92 -1.92 27.84 27.84" xmlns="http://www.w3.org/2000/svg" stroke="#7b1db9" stroke-width="0.384"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="m12 5.601c-.035 0-.076 0-.116 0-1.61 0-3.18.175-4.69.507l.144-.027c-1.442.303-2.718.751-3.91 1.343l.094-.042c-1.011.487-1.867 1.139-2.57 1.93l-.007.008c-.571.624-.927 1.453-.945 2.364v.004c.019.914.374 1.741.946 2.367l-.002-.003c.71.799 1.566 1.451 2.529 1.917l.048.021c1.098.549 2.374.998 3.71 1.282l.106.019c1.366.305 2.936.48 4.546.48h.123-.006.116c1.61 0 3.18-.175 4.69-.507l-.144.027c1.442-.303 2.718-.751 3.91-1.343l-.094.042c1.011-.487 1.867-1.139 2.57-1.93l.007-.008c.571-.624.927-1.453.945-2.364v-.004c-.018-.915-.374-1.744-.947-2.371l.002.003c-.71-.799-1.566-1.451-2.529-1.917l-.048-.021c-1.098-.549-2.374-.998-3.71-1.282l-.106-.019c-1.366-.305-2.936-.48-4.546-.48-.041 0-.082 0-.123 0h.006zm-3.12 7.264c-.131.119-.28.221-.442.301l-.011.005c-.141.068-.308.131-.482.179l-.021.005c-.172.062-.371.099-.579.099-.008 0-.016 0-.024 0h.001-1.972l-.32 1.963h-1.447l1.28-6.675h2.773c.018 0 .04-.001.062-.001.36 0 .706.063 1.026.179l-.021-.007c.295.108.546.276.748.489l.001.001c.175.223.3.493.354.789l.002.011c.025.146.04.314.04.486 0 .196-.019.387-.055.573l.003-.019c-.036.179-.083.335-.142.485l.007-.019q-.086.221-.184.417-.122.196-.27.393c-.096.129-.201.242-.317.343l-.003.002zm4.172.589.565-2.822c.024-.107.038-.229.038-.355 0-.026-.001-.052-.002-.078v.004c-.001-.109-.043-.208-.111-.283-.069-.06-.151-.106-.241-.134l-.005-.001c-.125-.04-.269-.062-.418-.062-.017 0-.034 0-.051.001h.002-1.126l-.736 3.73h-1.423l1.28-6.48h1.423l-.343 1.767h1.28c.022 0 .047-.001.073-.001.331 0 .653.041.961.117l-.027-.006c.249.055.466.172.641.332l-.001-.001c.156.123.267.298.306.498l.001.005c.014.089.022.191.022.295 0 .17-.021.335-.062.492l.003-.014-.589 2.994zm7.902-2.184c-.04.181-.082.328-.132.473l.009-.031c-.054.159-.12.297-.201.425l.005-.008c-.069.155-.151.288-.248.408l.003-.004c-.098.122-.203.23-.317.329l-.003.003c-.131.119-.28.221-.442.301l-.011.005c-.141.068-.308.131-.482.179l-.021.005c-.172.062-.371.099-.579.099-.008 0-.016 0-.024 0h.001-1.972l-.343 1.959h-1.423l1.28-6.675h2.749c.022-.001.047-.001.073-.001.365 0 .716.063 1.041.18l-.022-.007c.287.104.529.272.718.488l.002.002c.19.222.325.497.378.799l.002.01c.022.131.035.281.035.435 0 .221-.026.435-.075.641l.004-.019zm-2.7-1.547h-.978l-.513 2.749h.856.052c.25 0 .496-.023.734-.066l-.025.004c.204-.036.386-.109.546-.212l-.006.003c.136-.122.25-.263.339-.421l.004-.008c.103-.188.18-.407.219-.638l.002-.012c.031-.129.048-.278.048-.431 0-.074-.004-.147-.012-.218l.001.009c-.014-.158-.072-.301-.161-.419l.001.002c-.116-.108-.255-.192-.409-.243l-.008-.002c-.186-.062-.399-.097-.621-.097-.023 0-.046 0-.068.001h.003zm-11.19 0h-.978l-.515 2.749h.858.052c.25 0 .496-.023.734-.066l-.025.004c.204-.036.386-.109.546-.212l-.006.003c.136-.122.25-.263.339-.421l.004-.008c.103-.188.18-.407.219-.638l.002-.012c.031-.129.048-.278.048-.431 0-.074-.004-.147-.012-.218l.001.009c-.014-.158-.072-.301-.161-.419l.001.002c-.116-.108-.255-.192-.409-.243l-.008-.002c-.186-.062-.399-.097-.621-.097-.023 0-.046 0-.068.001h.003z"></path></g></svg>
+                                </div>
+                            </div>
+                                <div class="flex flex-col mx-4 gap-8 mt-8">
+                                    <div class="flex gap-4">
+                                        <p class="text-xl">SQL</p>
+                                        <svg class="size-12" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><title>file_type_sql</title><path d="M8.562,15.256A21.159,21.159,0,0,0,16,16.449a21.159,21.159,0,0,0,7.438-1.194c1.864-.727,2.525-1.535,2.525-2V9.7a10.357,10.357,0,0,1-2.084,1.076A22.293,22.293,0,0,1,16,12.078a22.36,22.36,0,0,1-7.879-1.3A10.28,10.28,0,0,1,6.037,9.7v3.55C6.037,13.724,6.7,14.528,8.562,15.256Z" style="fill:#ffda44"></path><path d="M8.562,21.961a15.611,15.611,0,0,0,2.6.741A24.9,24.9,0,0,0,16,23.155a24.9,24.9,0,0,0,4.838-.452,15.614,15.614,0,0,0,2.6-.741c1.864-.727,2.525-1.535,2.525-2v-3.39a10.706,10.706,0,0,1-1.692.825A23.49,23.49,0,0,1,16,18.74a23.49,23.49,0,0,1-8.271-1.348,10.829,10.829,0,0,1-1.692-.825V19.96C6.037,20.426,6.7,21.231,8.562,21.961Z" style="fill:#ffda44"></path><path d="M16,30c5.5,0,9.963-1.744,9.963-3.894V23.269a10.5,10.5,0,0,1-1.535.762l-.157.063A23.487,23.487,0,0,1,16,25.445a23.422,23.422,0,0,1-8.271-1.351c-.054-.02-.106-.043-.157-.063a10.5,10.5,0,0,1-1.535-.762v2.837C6.037,28.256,10.5,30,16,30Z" style="fill:#ffda44"></path><ellipse cx="16" cy="5.894" rx="9.963" ry="3.894" style="fill:#ffda44"></ellipse></g></svg>
+                                    </div>
+                                </div>
+                        </div>
+                </div>
+                
+            </div>
+            <div>
+                <p class="text-3xl mx-4 mt-12">Proyecto para Tetra MS - 2024</p>
+                <div class="mx-12 mt-5 md:grid md:grid-cols-5">
+                    <div class="col-span-4  m-4">
+                        <img src="/images/tetra.png" alt="">
+<p class="text-justify mx-4 text-lg">
+  Landing page informativa y bilingüe desarrollada para presentar los productos y servicios de Tetra MS, con un diseño enfocado en la accesibilidad y la experiencia del usuario.
+</p>
+
+                    </div>
+                        <div class="flex flex-wrap flex-col items-center justify-center ml-8">
+                            <div class="flex  md:flex-col mx-8 gap-8">
+                                <div class="flex gap-4">
+                                    <p class="text-xl">Vue.js</p>
+                                    <svg class="size-12" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M2 4L16 28L30 4H24.5L16 18.5L7.5 4H2Z" fill="#41B883"></path> <path d="M7.5 4L16 18.5L24.5 4H19.5L16.0653 10.0126L12.5 4H7.5Z" fill="#35495E"></path> </g></svg>
+                                </div>
+                                <div class="flex gap-4">
+                                    <p class="text-xl">Tailwind</p>
+                                    <svg class="size-12" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><title>file_type_tailwind</title><path d="M9,13.7q1.4-5.6,7-5.6c5.6,0,6.3,4.2,9.1,4.9q2.8.7,4.9-2.1-1.4,5.6-7,5.6c-5.6,0-6.3-4.2-9.1-4.9Q11.1,10.9,9,13.7ZM2,22.1q1.4-5.6,7-5.6c5.6,0,6.3,4.2,9.1,4.9q2.8.7,4.9-2.1-1.4,5.6-7,5.6c-5.6,0-6.3-4.2-9.1-4.9Q4.1,19.3,2,22.1Z" style="fill:#44a8b3"></path></g></svg>
+                                </div>
+                                <div class="flex gap-4">
+                                    <p class="text-xl">CSS</p>
+                                    <svg class="size-12" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 28L4 3H28L26 28L16 31L6 28Z" fill="#1172B8"></path> <path d="M26 5H16V29.5L24 27L26 5Z" fill="#33AADD"></path> <path d="M19.5 17.5H9.5L9 14L17 11.5H9L8.5 8.5H24L23.5 12L17 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5Z" fill="white"></path> </g></svg>
+                                </div>
+                                <div class="flex gap-4">
+                                    <p class="text-xl">HTML</p>
+                                    <svg class="size-12" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 28L4 3H28L26 28L16 31L6 28Z" fill="#E44D26"></path> <path d="M26 5H16V29.5L24 27L26 5Z" fill="#F16529"></path> <path d="M9.5 17.5L8.5 8H24L23.5 11H11.5L12 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5H9.5Z" fill="white"></path> </g></svg>
+                                </div>
+                                
+                            </div>
+                        </div>
+                </div>
+                
+            </div>
+            <div>
+                <p class="text-3xl mx-4 mt-12">Proyecto para Proveedora de Bellezas -2023</p>
+                <div class="mx-12 mt-5 md:grid md:grid-cols-5">
+                    <div class="col-span-4  m-4">
+                        <img src="/images/dali.png" alt="">
+                        <p class="text-justify mx-4 text-lg">
+                        Primer prototipo de tienda en línea desarrollado para un negocio de productos de belleza. Incluye sistema de carrito de compras, aunque no cuenta con integración de pagos en la misma página. Representa una primera aproximación al desarrollo de plataformas e-commerce.
+                        </p>
+                    </div>
+                        <div class="flex flex-wrap md:flex-col items-center justify-center ml-8">
+                            <div class="flex md:flex-col mx-8 gap-8">
+                                <div class="flex gap-4">
+                                    <p class="text-xl">Tailwind</p>
+                                    <svg class="size-12" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><title>file_type_tailwind</title><path d="M9,13.7q1.4-5.6,7-5.6c5.6,0,6.3,4.2,9.1,4.9q2.8.7,4.9-2.1-1.4,5.6-7,5.6c-5.6,0-6.3-4.2-9.1-4.9Q11.1,10.9,9,13.7ZM2,22.1q1.4-5.6,7-5.6c5.6,0,6.3,4.2,9.1,4.9q2.8.7,4.9-2.1-1.4,5.6-7,5.6c-5.6,0-6.3-4.2-9.1-4.9Q4.1,19.3,2,22.1Z" style="fill:#44a8b3"></path></g></svg>
+                                </div>
+                                <div class="flex gap-4">
+                                    <p class="text-xl">Bootstrap</p>
+                                    <svg viewBox="-1.68 -1.68 27.36 27.36" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#8529e0" stroke-width="0.24000000000000005"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M4.98488 2C3.61546 2 2.60217 3.19858 2.64753 4.49844C2.69105 5.74725 2.63451 7.36461 2.22732 8.68359C1.81892 10.0064 1.1282 10.8444 0 10.952V12.1666C1.1282 12.2742 1.81892 13.1122 2.22732 14.4351C2.63451 15.754 2.69105 17.3714 2.64753 18.6202C2.60217 19.9199 3.61546 21.1186 4.98508 21.1186H19.0169C20.3864 21.1186 21.3995 19.9201 21.3541 18.6202C21.3106 17.3714 21.3671 15.754 21.7743 14.4351C22.1829 13.1122 22.8718 12.2742 24 12.1666V10.952C22.8718 10.8444 22.1829 10.0064 21.7743 8.68359C21.3671 7.36481 21.3106 5.74725 21.3541 4.49844C21.3995 3.19878 20.3864 2 19.0169 2H4.98468H4.98488ZM16.2712 13.7687C16.2712 15.5586 14.9361 16.6441 12.7206 16.6441H8.94915C8.84127 16.6441 8.7378 16.6012 8.66152 16.5249C8.58523 16.4486 8.54237 16.3452 8.54237 16.2373V6.88136C8.54237 6.77347 8.58523 6.67001 8.66152 6.59372C8.7378 6.51743 8.84127 6.47458 8.94915 6.47458H12.6991C14.5464 6.47458 15.7588 7.47525 15.7588 9.01166C15.7588 10.09 14.9433 11.0555 13.9041 11.2245V11.2809C15.3187 11.4361 16.2712 12.4156 16.2712 13.7687ZM12.3094 7.76407H10.1589V10.8015H11.9701C13.3702 10.8015 14.1423 10.2377 14.1423 9.2299C14.1423 8.28556 13.4784 7.76407 12.3094 7.76407ZM10.1589 12.0068V15.3542H12.3885C13.8462 15.3542 14.6184 14.7692 14.6184 13.6699C14.6184 12.5704 13.8246 12.0066 12.2947 12.0066H10.1589V12.0068Z" fill="#8a04c8"></path> </g></svg>
+                                </div>
+                                <div class="flex gap-4">
+                                    <p class="text-xl">CSS</p>
+                                    <svg class="size-12" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 28L4 3H28L26 28L16 31L6 28Z" fill="#1172B8"></path> <path d="M26 5H16V29.5L24 27L26 5Z" fill="#33AADD"></path> <path d="M19.5 17.5H9.5L9 14L17 11.5H9L8.5 8.5H24L23.5 12L17 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5Z" fill="white"></path> </g></svg>
+                                </div>
+                                <div class="flex gap-4">
+                                    <p class="text-xl">HTML</p>
+                                    <svg class="size-12" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 28L4 3H28L26 28L16 31L6 28Z" fill="#E44D26"></path> <path d="M26 5H16V29.5L24 27L26 5Z" fill="#F16529"></path> <path d="M9.5 17.5L8.5 8H24L23.5 11H11.5L12 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5H9.5Z" fill="white"></path> </g></svg>
+                                </div>
+                                
+                            </div>
+                            <div class="flex flex-col mx-8 gap-8 mt-8">
+                                <div class="flex gap-4">
+                                    <p class="text-xl">PHP</p>
+                                    <svg class="size-12" fill="#7b1db9" viewBox="-1.92 -1.92 27.84 27.84" xmlns="http://www.w3.org/2000/svg" stroke="#7b1db9" stroke-width="0.384"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="m12 5.601c-.035 0-.076 0-.116 0-1.61 0-3.18.175-4.69.507l.144-.027c-1.442.303-2.718.751-3.91 1.343l.094-.042c-1.011.487-1.867 1.139-2.57 1.93l-.007.008c-.571.624-.927 1.453-.945 2.364v.004c.019.914.374 1.741.946 2.367l-.002-.003c.71.799 1.566 1.451 2.529 1.917l.048.021c1.098.549 2.374.998 3.71 1.282l.106.019c1.366.305 2.936.48 4.546.48h.123-.006.116c1.61 0 3.18-.175 4.69-.507l-.144.027c1.442-.303 2.718-.751 3.91-1.343l-.094.042c1.011-.487 1.867-1.139 2.57-1.93l.007-.008c.571-.624.927-1.453.945-2.364v-.004c-.018-.915-.374-1.744-.947-2.371l.002.003c-.71-.799-1.566-1.451-2.529-1.917l-.048-.021c-1.098-.549-2.374-.998-3.71-1.282l-.106-.019c-1.366-.305-2.936-.48-4.546-.48-.041 0-.082 0-.123 0h.006zm-3.12 7.264c-.131.119-.28.221-.442.301l-.011.005c-.141.068-.308.131-.482.179l-.021.005c-.172.062-.371.099-.579.099-.008 0-.016 0-.024 0h.001-1.972l-.32 1.963h-1.447l1.28-6.675h2.773c.018 0 .04-.001.062-.001.36 0 .706.063 1.026.179l-.021-.007c.295.108.546.276.748.489l.001.001c.175.223.3.493.354.789l.002.011c.025.146.04.314.04.486 0 .196-.019.387-.055.573l.003-.019c-.036.179-.083.335-.142.485l.007-.019q-.086.221-.184.417-.122.196-.27.393c-.096.129-.201.242-.317.343l-.003.002zm4.172.589.565-2.822c.024-.107.038-.229.038-.355 0-.026-.001-.052-.002-.078v.004c-.001-.109-.043-.208-.111-.283-.069-.06-.151-.106-.241-.134l-.005-.001c-.125-.04-.269-.062-.418-.062-.017 0-.034 0-.051.001h.002-1.126l-.736 3.73h-1.423l1.28-6.48h1.423l-.343 1.767h1.28c.022 0 .047-.001.073-.001.331 0 .653.041.961.117l-.027-.006c.249.055.466.172.641.332l-.001-.001c.156.123.267.298.306.498l.001.005c.014.089.022.191.022.295 0 .17-.021.335-.062.492l.003-.014-.589 2.994zm7.902-2.184c-.04.181-.082.328-.132.473l.009-.031c-.054.159-.12.297-.201.425l.005-.008c-.069.155-.151.288-.248.408l.003-.004c-.098.122-.203.23-.317.329l-.003.003c-.131.119-.28.221-.442.301l-.011.005c-.141.068-.308.131-.482.179l-.021.005c-.172.062-.371.099-.579.099-.008 0-.016 0-.024 0h.001-1.972l-.343 1.959h-1.423l1.28-6.675h2.749c.022-.001.047-.001.073-.001.365 0 .716.063 1.041.18l-.022-.007c.287.104.529.272.718.488l.002.002c.19.222.325.497.378.799l.002.01c.022.131.035.281.035.435 0 .221-.026.435-.075.641l.004-.019zm-2.7-1.547h-.978l-.513 2.749h.856.052c.25 0 .496-.023.734-.066l-.025.004c.204-.036.386-.109.546-.212l-.006.003c.136-.122.25-.263.339-.421l.004-.008c.103-.188.18-.407.219-.638l.002-.012c.031-.129.048-.278.048-.431 0-.074-.004-.147-.012-.218l.001.009c-.014-.158-.072-.301-.161-.419l.001.002c-.116-.108-.255-.192-.409-.243l-.008-.002c-.186-.062-.399-.097-.621-.097-.023 0-.046 0-.068.001h.003zm-11.19 0h-.978l-.515 2.749h.858.052c.25 0 .496-.023.734-.066l-.025.004c.204-.036.386-.109.546-.212l-.006.003c.136-.122.25-.263.339-.421l.004-.008c.103-.188.18-.407.219-.638l.002-.012c.031-.129.048-.278.048-.431 0-.074-.004-.147-.012-.218l.001.009c-.014-.158-.072-.301-.161-.419l.001.002c-.116-.108-.255-.192-.409-.243l-.008-.002c-.186-.062-.399-.097-.621-.097-.023 0-.046 0-.068.001h.003z"></path></g></svg>
+                                </div>
+                            </div>
+                                <div class="flex flex-col mx-4 gap-8 mt-8">
+                                    <div class="flex gap-4">
+                                        <p class="text-xl">SQL</p>
+                                        <svg class="size-12" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><title>file_type_sql</title><path d="M8.562,15.256A21.159,21.159,0,0,0,16,16.449a21.159,21.159,0,0,0,7.438-1.194c1.864-.727,2.525-1.535,2.525-2V9.7a10.357,10.357,0,0,1-2.084,1.076A22.293,22.293,0,0,1,16,12.078a22.36,22.36,0,0,1-7.879-1.3A10.28,10.28,0,0,1,6.037,9.7v3.55C6.037,13.724,6.7,14.528,8.562,15.256Z" style="fill:#ffda44"></path><path d="M8.562,21.961a15.611,15.611,0,0,0,2.6.741A24.9,24.9,0,0,0,16,23.155a24.9,24.9,0,0,0,4.838-.452,15.614,15.614,0,0,0,2.6-.741c1.864-.727,2.525-1.535,2.525-2v-3.39a10.706,10.706,0,0,1-1.692.825A23.49,23.49,0,0,1,16,18.74a23.49,23.49,0,0,1-8.271-1.348,10.829,10.829,0,0,1-1.692-.825V19.96C6.037,20.426,6.7,21.231,8.562,21.961Z" style="fill:#ffda44"></path><path d="M16,30c5.5,0,9.963-1.744,9.963-3.894V23.269a10.5,10.5,0,0,1-1.535.762l-.157.063A23.487,23.487,0,0,1,16,25.445a23.422,23.422,0,0,1-8.271-1.351c-.054-.02-.106-.043-.157-.063a10.5,10.5,0,0,1-1.535-.762v2.837C6.037,28.256,10.5,30,16,30Z" style="fill:#ffda44"></path><ellipse cx="16" cy="5.894" rx="9.963" ry="3.894" style="fill:#ffda44"></ellipse></g></svg>
+                                    </div>
+                                </div>
+                        </div>
+                </div>
+                
+            </div>
+            <div>
+                <p class="text-3xl mx-4 mt-12">Proyecto para Corporativo Sando - 2023</p>
+                <div class="mx-12 mt-5 md:grid md:grid-cols-5">
+                    <div class="col-span-4  m-4">
+                        <img class="w-6/7" src="/images/sando.png" alt="">
+<p class="text-justify mx-4 text-lg">
+  Landing page informativa con formulario de contacto integrado, diseñado para facilitar la comunicación directa entre el cliente y el administrador de la plataforma.
+</p>
+
+                    </div>
+<div class="flex flex-wrap md:flex-col items-center justify-center ml-8">
+                            <div class="flex md:flex-col mx-8 gap-8">
+                                <div class="flex gap-4">
+                                    <p class="text-xl">Tailwind</p>
+                                    <svg class="size-12" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><title>file_type_tailwind</title><path d="M9,13.7q1.4-5.6,7-5.6c5.6,0,6.3,4.2,9.1,4.9q2.8.7,4.9-2.1-1.4,5.6-7,5.6c-5.6,0-6.3-4.2-9.1-4.9Q11.1,10.9,9,13.7ZM2,22.1q1.4-5.6,7-5.6c5.6,0,6.3,4.2,9.1,4.9q2.8.7,4.9-2.1-1.4,5.6-7,5.6c-5.6,0-6.3-4.2-9.1-4.9Q4.1,19.3,2,22.1Z" style="fill:#44a8b3"></path></g></svg>
+                                </div>
+                                <div class="flex gap-4">
+                                    <p class="text-xl">Bootstrap</p>
+                                    <svg viewBox="-1.68 -1.68 27.36 27.36" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#8529e0" stroke-width="0.24000000000000005"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M4.98488 2C3.61546 2 2.60217 3.19858 2.64753 4.49844C2.69105 5.74725 2.63451 7.36461 2.22732 8.68359C1.81892 10.0064 1.1282 10.8444 0 10.952V12.1666C1.1282 12.2742 1.81892 13.1122 2.22732 14.4351C2.63451 15.754 2.69105 17.3714 2.64753 18.6202C2.60217 19.9199 3.61546 21.1186 4.98508 21.1186H19.0169C20.3864 21.1186 21.3995 19.9201 21.3541 18.6202C21.3106 17.3714 21.3671 15.754 21.7743 14.4351C22.1829 13.1122 22.8718 12.2742 24 12.1666V10.952C22.8718 10.8444 22.1829 10.0064 21.7743 8.68359C21.3671 7.36481 21.3106 5.74725 21.3541 4.49844C21.3995 3.19878 20.3864 2 19.0169 2H4.98468H4.98488ZM16.2712 13.7687C16.2712 15.5586 14.9361 16.6441 12.7206 16.6441H8.94915C8.84127 16.6441 8.7378 16.6012 8.66152 16.5249C8.58523 16.4486 8.54237 16.3452 8.54237 16.2373V6.88136C8.54237 6.77347 8.58523 6.67001 8.66152 6.59372C8.7378 6.51743 8.84127 6.47458 8.94915 6.47458H12.6991C14.5464 6.47458 15.7588 7.47525 15.7588 9.01166C15.7588 10.09 14.9433 11.0555 13.9041 11.2245V11.2809C15.3187 11.4361 16.2712 12.4156 16.2712 13.7687ZM12.3094 7.76407H10.1589V10.8015H11.9701C13.3702 10.8015 14.1423 10.2377 14.1423 9.2299C14.1423 8.28556 13.4784 7.76407 12.3094 7.76407ZM10.1589 12.0068V15.3542H12.3885C13.8462 15.3542 14.6184 14.7692 14.6184 13.6699C14.6184 12.5704 13.8246 12.0066 12.2947 12.0066H10.1589V12.0068Z" fill="#8a04c8"></path> </g></svg>
+                                </div>
+                                <div class="flex gap-4">
+                                    <p class="text-xl">CSS</p>
+                                    <svg class="size-12" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 28L4 3H28L26 28L16 31L6 28Z" fill="#1172B8"></path> <path d="M26 5H16V29.5L24 27L26 5Z" fill="#33AADD"></path> <path d="M19.5 17.5H9.5L9 14L17 11.5H9L8.5 8.5H24L23.5 12L17 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5Z" fill="white"></path> </g></svg>
+                                </div>
+                                <div class="flex gap-4">
+                                    <p class="text-xl">HTML</p>
+                                    <svg class="size-12" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 28L4 3H28L26 28L16 31L6 28Z" fill="#E44D26"></path> <path d="M26 5H16V29.5L24 27L26 5Z" fill="#F16529"></path> <path d="M9.5 17.5L8.5 8H24L23.5 11H11.5L12 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5H9.5Z" fill="white"></path> </g></svg>
+                                </div>
+                                
+                            </div>
+                            <div class="flex flex-col mx-8 gap-8 mt-8">
+                                <div class="flex gap-4">
+                                    <p class="text-xl">PHP</p>
+                                    <svg class="size-12" fill="#7b1db9" viewBox="-1.92 -1.92 27.84 27.84" xmlns="http://www.w3.org/2000/svg" stroke="#7b1db9" stroke-width="0.384"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="m12 5.601c-.035 0-.076 0-.116 0-1.61 0-3.18.175-4.69.507l.144-.027c-1.442.303-2.718.751-3.91 1.343l.094-.042c-1.011.487-1.867 1.139-2.57 1.93l-.007.008c-.571.624-.927 1.453-.945 2.364v.004c.019.914.374 1.741.946 2.367l-.002-.003c.71.799 1.566 1.451 2.529 1.917l.048.021c1.098.549 2.374.998 3.71 1.282l.106.019c1.366.305 2.936.48 4.546.48h.123-.006.116c1.61 0 3.18-.175 4.69-.507l-.144.027c1.442-.303 2.718-.751 3.91-1.343l-.094.042c1.011-.487 1.867-1.139 2.57-1.93l.007-.008c.571-.624.927-1.453.945-2.364v-.004c-.018-.915-.374-1.744-.947-2.371l.002.003c-.71-.799-1.566-1.451-2.529-1.917l-.048-.021c-1.098-.549-2.374-.998-3.71-1.282l-.106-.019c-1.366-.305-2.936-.48-4.546-.48-.041 0-.082 0-.123 0h.006zm-3.12 7.264c-.131.119-.28.221-.442.301l-.011.005c-.141.068-.308.131-.482.179l-.021.005c-.172.062-.371.099-.579.099-.008 0-.016 0-.024 0h.001-1.972l-.32 1.963h-1.447l1.28-6.675h2.773c.018 0 .04-.001.062-.001.36 0 .706.063 1.026.179l-.021-.007c.295.108.546.276.748.489l.001.001c.175.223.3.493.354.789l.002.011c.025.146.04.314.04.486 0 .196-.019.387-.055.573l.003-.019c-.036.179-.083.335-.142.485l.007-.019q-.086.221-.184.417-.122.196-.27.393c-.096.129-.201.242-.317.343l-.003.002zm4.172.589.565-2.822c.024-.107.038-.229.038-.355 0-.026-.001-.052-.002-.078v.004c-.001-.109-.043-.208-.111-.283-.069-.06-.151-.106-.241-.134l-.005-.001c-.125-.04-.269-.062-.418-.062-.017 0-.034 0-.051.001h.002-1.126l-.736 3.73h-1.423l1.28-6.48h1.423l-.343 1.767h1.28c.022 0 .047-.001.073-.001.331 0 .653.041.961.117l-.027-.006c.249.055.466.172.641.332l-.001-.001c.156.123.267.298.306.498l.001.005c.014.089.022.191.022.295 0 .17-.021.335-.062.492l.003-.014-.589 2.994zm7.902-2.184c-.04.181-.082.328-.132.473l.009-.031c-.054.159-.12.297-.201.425l.005-.008c-.069.155-.151.288-.248.408l.003-.004c-.098.122-.203.23-.317.329l-.003.003c-.131.119-.28.221-.442.301l-.011.005c-.141.068-.308.131-.482.179l-.021.005c-.172.062-.371.099-.579.099-.008 0-.016 0-.024 0h.001-1.972l-.343 1.959h-1.423l1.28-6.675h2.749c.022-.001.047-.001.073-.001.365 0 .716.063 1.041.18l-.022-.007c.287.104.529.272.718.488l.002.002c.19.222.325.497.378.799l.002.01c.022.131.035.281.035.435 0 .221-.026.435-.075.641l.004-.019zm-2.7-1.547h-.978l-.513 2.749h.856.052c.25 0 .496-.023.734-.066l-.025.004c.204-.036.386-.109.546-.212l-.006.003c.136-.122.25-.263.339-.421l.004-.008c.103-.188.18-.407.219-.638l.002-.012c.031-.129.048-.278.048-.431 0-.074-.004-.147-.012-.218l.001.009c-.014-.158-.072-.301-.161-.419l.001.002c-.116-.108-.255-.192-.409-.243l-.008-.002c-.186-.062-.399-.097-.621-.097-.023 0-.046 0-.068.001h.003zm-11.19 0h-.978l-.515 2.749h.858.052c.25 0 .496-.023.734-.066l-.025.004c.204-.036.386-.109.546-.212l-.006.003c.136-.122.25-.263.339-.421l.004-.008c.103-.188.18-.407.219-.638l.002-.012c.031-.129.048-.278.048-.431 0-.074-.004-.147-.012-.218l.001.009c-.014-.158-.072-.301-.161-.419l.001.002c-.116-.108-.255-.192-.409-.243l-.008-.002c-.186-.062-.399-.097-.621-.097-.023 0-.046 0-.068.001h.003z"></path></g></svg>
+                                </div>
+                            </div>
+                                <div class="flex flex-col mx-4 gap-8 mt-8">
+                                    <div class="flex gap-4">
+                                        <p class="text-xl">SQL</p>
+                                        <svg class="size-12" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><title>file_type_sql</title><path d="M8.562,15.256A21.159,21.159,0,0,0,16,16.449a21.159,21.159,0,0,0,7.438-1.194c1.864-.727,2.525-1.535,2.525-2V9.7a10.357,10.357,0,0,1-2.084,1.076A22.293,22.293,0,0,1,16,12.078a22.36,22.36,0,0,1-7.879-1.3A10.28,10.28,0,0,1,6.037,9.7v3.55C6.037,13.724,6.7,14.528,8.562,15.256Z" style="fill:#ffda44"></path><path d="M8.562,21.961a15.611,15.611,0,0,0,2.6.741A24.9,24.9,0,0,0,16,23.155a24.9,24.9,0,0,0,4.838-.452,15.614,15.614,0,0,0,2.6-.741c1.864-.727,2.525-1.535,2.525-2v-3.39a10.706,10.706,0,0,1-1.692.825A23.49,23.49,0,0,1,16,18.74a23.49,23.49,0,0,1-8.271-1.348,10.829,10.829,0,0,1-1.692-.825V19.96C6.037,20.426,6.7,21.231,8.562,21.961Z" style="fill:#ffda44"></path><path d="M16,30c5.5,0,9.963-1.744,9.963-3.894V23.269a10.5,10.5,0,0,1-1.535.762l-.157.063A23.487,23.487,0,0,1,16,25.445a23.422,23.422,0,0,1-8.271-1.351c-.054-.02-.106-.043-.157-.063a10.5,10.5,0,0,1-1.535-.762v2.837C6.037,28.256,10.5,30,16,30Z" style="fill:#ffda44"></path><ellipse cx="16" cy="5.894" rx="9.963" ry="3.894" style="fill:#ffda44"></ellipse></g></svg>
+                                    </div>
+                                </div>
+                        </div>
+                </div>
+                
+            </div>
+            <div>
+                <p class="text-3xl mx-4 mt-12">Proyecto para Array Redes - 2023</p>
+                <div class="mx-12 mt-5 md:grid md:grid-cols-5">
+                    <div class="col-span-4  m-4">
+                        <img src="/images/array.png" alt="">
+<p class="text-justify mx-4 text-lg">
+  Mi primer proyecto como profesional, una landing page informativa y sencilla, desarrollada para ofrecer servicios relacionados con tecnología. Enfocada en presentar de forma clara y accesible los principales beneficios y soluciones disponibles.
+</p>
+
+                    </div>
+                        <div class="flex flex-wrap md:flex-col items-center justify-center ml-8">
+                            <div class="flex md:flex-col  mx-8 gap-8">
+                                <div class="flex gap-4">
+                                    <p class="text-xl">Tailwind</p>
+                                    <svg class="size-12" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><title>file_type_tailwind</title><path d="M9,13.7q1.4-5.6,7-5.6c5.6,0,6.3,4.2,9.1,4.9q2.8.7,4.9-2.1-1.4,5.6-7,5.6c-5.6,0-6.3-4.2-9.1-4.9Q11.1,10.9,9,13.7ZM2,22.1q1.4-5.6,7-5.6c5.6,0,6.3,4.2,9.1,4.9q2.8.7,4.9-2.1-1.4,5.6-7,5.6c-5.6,0-6.3-4.2-9.1-4.9Q4.1,19.3,2,22.1Z" style="fill:#44a8b3"></path></g></svg>
+                                </div>
+                                <div class="flex gap-4">
+                                    <p class="text-xl">CSS</p>
+                                    <svg class="size-12" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 28L4 3H28L26 28L16 31L6 28Z" fill="#1172B8"></path> <path d="M26 5H16V29.5L24 27L26 5Z" fill="#33AADD"></path> <path d="M19.5 17.5H9.5L9 14L17 11.5H9L8.5 8.5H24L23.5 12L17 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5Z" fill="white"></path> </g></svg>
+                                </div>
+                                <div class="flex gap-4">
+                                    <p class="text-xl">HTML</p>
+                                    <svg class="size-12" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 28L4 3H28L26 28L16 31L6 28Z" fill="#E44D26"></path> <path d="M26 5H16V29.5L24 27L26 5Z" fill="#F16529"></path> <path d="M9.5 17.5L8.5 8H24L23.5 11H11.5L12 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5H9.5Z" fill="white"></path> </g></svg>
+                                </div>
+                                
+                            </div>
+                        </div>
+                </div>
+                
+            </div>
+                        <div>
+                <p class="text-3xl mx-4 mt-12">Proyecto para Proveedora de Bellezas - 2022</p>
+                <div class="mx-12 mt-5 md:grid md:grid-cols-5">
+                    <div class="col-span-4  m-4">
+                        <img src="/images/EIAO.png" alt="">
+<p class="text-justify mx-4 text-lg">
+  Proyecto escolar enfocado en la concientización ambiental. Se trata de una calculadora que, mediante cálculos simples, permite estimar el ahorro de agua, electricidad, emisiones de CO₂, entre otros recursos, al reciclar distintos tipos de materiales. Toda la información se almacena en una base de datos para posteriormente generar gráficos con los resultados registrados.
+</p>
+
+                    </div>
+                        <div class="flex flex-wrap md:flex-col items-center justify-center ml-8">
+                            <div class="flex md:flex-col mx-8 gap-8">
+                                <div class="flex gap-4">
+                                    <p class="text-xl">CSS</p>
+                                    <svg class="size-12" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 28L4 3H28L26 28L16 31L6 28Z" fill="#1172B8"></path> <path d="M26 5H16V29.5L24 27L26 5Z" fill="#33AADD"></path> <path d="M19.5 17.5H9.5L9 14L17 11.5H9L8.5 8.5H24L23.5 12L17 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5Z" fill="white"></path> </g></svg>
+                                </div>
+                                <div class="flex gap-4">
+                                    <p class="text-xl">HTML</p>
+                                    <svg class="size-12" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M6 28L4 3H28L26 28L16 31L6 28Z" fill="#E44D26"></path> <path d="M26 5H16V29.5L24 27L26 5Z" fill="#F16529"></path> <path d="M9.5 17.5L8.5 8H24L23.5 11H11.5L12 14.5H23L22 24L16 26L10 24L9.5 19H12.5L13 21.5L16 22.5L19 21.5L19.5 17.5H9.5Z" fill="white"></path> </g></svg>
+                                </div>
+                            </div>
+                                <div class="flex md:flex-col mx-8 gap-8 mt-8">
+                                <div class="flex gap-4">
+                                    <p class="text-xl">Bootstrap</p>
+                                    <svg class="size-12" viewBox="-1.68 -1.68 27.36 27.36" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#8529e0" stroke-width="0.24000000000000005"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M4.98488 2C3.61546 2 2.60217 3.19858 2.64753 4.49844C2.69105 5.74725 2.63451 7.36461 2.22732 8.68359C1.81892 10.0064 1.1282 10.8444 0 10.952V12.1666C1.1282 12.2742 1.81892 13.1122 2.22732 14.4351C2.63451 15.754 2.69105 17.3714 2.64753 18.6202C2.60217 19.9199 3.61546 21.1186 4.98508 21.1186H19.0169C20.3864 21.1186 21.3995 19.9201 21.3541 18.6202C21.3106 17.3714 21.3671 15.754 21.7743 14.4351C22.1829 13.1122 22.8718 12.2742 24 12.1666V10.952C22.8718 10.8444 22.1829 10.0064 21.7743 8.68359C21.3671 7.36481 21.3106 5.74725 21.3541 4.49844C21.3995 3.19878 20.3864 2 19.0169 2H4.98468H4.98488ZM16.2712 13.7687C16.2712 15.5586 14.9361 16.6441 12.7206 16.6441H8.94915C8.84127 16.6441 8.7378 16.6012 8.66152 16.5249C8.58523 16.4486 8.54237 16.3452 8.54237 16.2373V6.88136C8.54237 6.77347 8.58523 6.67001 8.66152 6.59372C8.7378 6.51743 8.84127 6.47458 8.94915 6.47458H12.6991C14.5464 6.47458 15.7588 7.47525 15.7588 9.01166C15.7588 10.09 14.9433 11.0555 13.9041 11.2245V11.2809C15.3187 11.4361 16.2712 12.4156 16.2712 13.7687ZM12.3094 7.76407H10.1589V10.8015H11.9701C13.3702 10.8015 14.1423 10.2377 14.1423 9.2299C14.1423 8.28556 13.4784 7.76407 12.3094 7.76407ZM10.1589 12.0068V15.3542H12.3885C13.8462 15.3542 14.6184 14.7692 14.6184 13.6699C14.6184 12.5704 13.8246 12.0066 12.2947 12.0066H10.1589V12.0068Z" fill="#8a04c8"></path> </g></svg>
+                                </div>
+                                                            <div class="flex flex-col mx-8 gap-8 mt-8">
+                                <div class="flex gap-4">
+                                    <p class="text-xl">PHP</p>
+                                    <svg class="size-12" fill="#7b1db9" viewBox="-1.92 -1.92 27.84 27.84" xmlns="http://www.w3.org/2000/svg" stroke="#7b1db9" stroke-width="0.384"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="m12 5.601c-.035 0-.076 0-.116 0-1.61 0-3.18.175-4.69.507l.144-.027c-1.442.303-2.718.751-3.91 1.343l.094-.042c-1.011.487-1.867 1.139-2.57 1.93l-.007.008c-.571.624-.927 1.453-.945 2.364v.004c.019.914.374 1.741.946 2.367l-.002-.003c.71.799 1.566 1.451 2.529 1.917l.048.021c1.098.549 2.374.998 3.71 1.282l.106.019c1.366.305 2.936.48 4.546.48h.123-.006.116c1.61 0 3.18-.175 4.69-.507l-.144.027c1.442-.303 2.718-.751 3.91-1.343l-.094.042c1.011-.487 1.867-1.139 2.57-1.93l.007-.008c.571-.624.927-1.453.945-2.364v-.004c-.018-.915-.374-1.744-.947-2.371l.002.003c-.71-.799-1.566-1.451-2.529-1.917l-.048-.021c-1.098-.549-2.374-.998-3.71-1.282l-.106-.019c-1.366-.305-2.936-.48-4.546-.48-.041 0-.082 0-.123 0h.006zm-3.12 7.264c-.131.119-.28.221-.442.301l-.011.005c-.141.068-.308.131-.482.179l-.021.005c-.172.062-.371.099-.579.099-.008 0-.016 0-.024 0h.001-1.972l-.32 1.963h-1.447l1.28-6.675h2.773c.018 0 .04-.001.062-.001.36 0 .706.063 1.026.179l-.021-.007c.295.108.546.276.748.489l.001.001c.175.223.3.493.354.789l.002.011c.025.146.04.314.04.486 0 .196-.019.387-.055.573l.003-.019c-.036.179-.083.335-.142.485l.007-.019q-.086.221-.184.417-.122.196-.27.393c-.096.129-.201.242-.317.343l-.003.002zm4.172.589.565-2.822c.024-.107.038-.229.038-.355 0-.026-.001-.052-.002-.078v.004c-.001-.109-.043-.208-.111-.283-.069-.06-.151-.106-.241-.134l-.005-.001c-.125-.04-.269-.062-.418-.062-.017 0-.034 0-.051.001h.002-1.126l-.736 3.73h-1.423l1.28-6.48h1.423l-.343 1.767h1.28c.022 0 .047-.001.073-.001.331 0 .653.041.961.117l-.027-.006c.249.055.466.172.641.332l-.001-.001c.156.123.267.298.306.498l.001.005c.014.089.022.191.022.295 0 .17-.021.335-.062.492l.003-.014-.589 2.994zm7.902-2.184c-.04.181-.082.328-.132.473l.009-.031c-.054.159-.12.297-.201.425l.005-.008c-.069.155-.151.288-.248.408l.003-.004c-.098.122-.203.23-.317.329l-.003.003c-.131.119-.28.221-.442.301l-.011.005c-.141.068-.308.131-.482.179l-.021.005c-.172.062-.371.099-.579.099-.008 0-.016 0-.024 0h.001-1.972l-.343 1.959h-1.423l1.28-6.675h2.749c.022-.001.047-.001.073-.001.365 0 .716.063 1.041.18l-.022-.007c.287.104.529.272.718.488l.002.002c.19.222.325.497.378.799l.002.01c.022.131.035.281.035.435 0 .221-.026.435-.075.641l.004-.019zm-2.7-1.547h-.978l-.513 2.749h.856.052c.25 0 .496-.023.734-.066l-.025.004c.204-.036.386-.109.546-.212l-.006.003c.136-.122.25-.263.339-.421l.004-.008c.103-.188.18-.407.219-.638l.002-.012c.031-.129.048-.278.048-.431 0-.074-.004-.147-.012-.218l.001.009c-.014-.158-.072-.301-.161-.419l.001.002c-.116-.108-.255-.192-.409-.243l-.008-.002c-.186-.062-.399-.097-.621-.097-.023 0-.046 0-.068.001h.003zm-11.19 0h-.978l-.515 2.749h.858.052c.25 0 .496-.023.734-.066l-.025.004c.204-.036.386-.109.546-.212l-.006.003c.136-.122.25-.263.339-.421l.004-.008c.103-.188.18-.407.219-.638l.002-.012c.031-.129.048-.278.048-.431 0-.074-.004-.147-.012-.218l.001.009c-.014-.158-.072-.301-.161-.419l.001.002c-.116-.108-.255-.192-.409-.243l-.008-.002c-.186-.062-.399-.097-.621-.097-.023 0-.046 0-.068.001h.003z"></path></g></svg>
+                                </div>
+                            </div>
+                                <div class="flex flex-col mx-4 gap-8 mt-8">
+                                    <div class="flex gap-4">
+                                        <p class="text-xl">SQL</p>
+                                        <svg class="size-12" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" fill="#000000"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><title>file_type_sql</title><path d="M8.562,15.256A21.159,21.159,0,0,0,16,16.449a21.159,21.159,0,0,0,7.438-1.194c1.864-.727,2.525-1.535,2.525-2V9.7a10.357,10.357,0,0,1-2.084,1.076A22.293,22.293,0,0,1,16,12.078a22.36,22.36,0,0,1-7.879-1.3A10.28,10.28,0,0,1,6.037,9.7v3.55C6.037,13.724,6.7,14.528,8.562,15.256Z" style="fill:#ffda44"></path><path d="M8.562,21.961a15.611,15.611,0,0,0,2.6.741A24.9,24.9,0,0,0,16,23.155a24.9,24.9,0,0,0,4.838-.452,15.614,15.614,0,0,0,2.6-.741c1.864-.727,2.525-1.535,2.525-2v-3.39a10.706,10.706,0,0,1-1.692.825A23.49,23.49,0,0,1,16,18.74a23.49,23.49,0,0,1-8.271-1.348,10.829,10.829,0,0,1-1.692-.825V19.96C6.037,20.426,6.7,21.231,8.562,21.961Z" style="fill:#ffda44"></path><path d="M16,30c5.5,0,9.963-1.744,9.963-3.894V23.269a10.5,10.5,0,0,1-1.535.762l-.157.063A23.487,23.487,0,0,1,16,25.445a23.422,23.422,0,0,1-8.271-1.351c-.054-.02-.106-.043-.157-.063a10.5,10.5,0,0,1-1.535-.762v2.837C6.037,28.256,10.5,30,16,30Z" style="fill:#ffda44"></path><ellipse cx="16" cy="5.894" rx="9.963" ry="3.894" style="fill:#ffda44"></ellipse></g></svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
